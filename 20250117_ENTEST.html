@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="overflow-x: hidden">
+<style>
+    *{padding: 0;margin: 0;}
+    a {text-decoration-line: none;}
+    div {width: 1440px;margin: 0 auto;}
+
+    header {height: 43px;background-color: #f5f5f5;padding: 10px 5%;}
+    
+    .custom {height: 800px;background-color: #f5f5f5;}
+    footer {padding: 110px 0;background-color: #1c1d1c;color: #fff;}
+
+    ul>li {float: left;list-style-type: none;}
+    img {width: 100%;}
+
+    .header_inner {width: 100%; height: 43px;display: flex;justify-content: flex-start;}
+    header .logo {display: block; width: 136px;margin-right: auto;}
+    header ul {margin-left: auto;display: flex;justify-content: space-evenly;flex-wrap: wrap;flex-direction: row;}
+    header ul li{margin-left: 44px;font-size: 15px;font-weight: bold;}
+    header ul li a {color: #000;height: 43px;display: table-cell;vertical-align: middle;font-size: 25px;}
+
+    .intro {overflow: hidden;display: block;max-height:750px;position: relative;}
+    .intro_inner {position: absolute;z-index: 10;top: 30%;right: -10%;width: 100%;height: 100%;}
+    .intro .swiper-container {width: 100%;}
+    .swiper-container div {padding: 0 !important;}
+    .swiper-container img {filter: brightness(50%);}
+
+    .intro_inner {color: #fff;}
+    .intro_inner p {font-weight: bold;font-size: 50px;margin-bottom: 15px;line-height: 50px;}
+
+    .card {padding: 160px 0;max-width: 1440px;background-color: #fff;}
+    .card ul {display: flex;justify-content: space-evenly;flex-wrap: wrap;flex-direction: row; width: 100%;}
+    .card li {overflow: hidden;display: inline-block;width: 337px;height: 483px;margin:0 0 30px 0;background: #fff;box-shadow: 0px 0px 10px 1px #bfbdbd;border-radius: 5px;}
+    .card li div {padding: 30px;display: block;width: 277px;height: 160px;position: relative;}
+    .card li div .txt {font-size: 15px;display: block;position: absolute;bottom: 0;color: #ccc;}
+    .card li p {font-size: 33px;font-weight: bold;word-break:keep-all;}
+
+    .footer_inner img {width: 253px; filter: grayscale(100%) invert(100%);margin-bottom: 30px;}
+
+    @media (max-width: 1440px) {
+        body>div {max-width: 100% !important;margin: 0 auto;padding: 0 10px;}
+        .card ul {width: 80%;margin: 0 10%;}
+        .footer_inner {margin-left: 10%;}
+    }
+
+    @media (max-width: 810px) {
+        header ul li {
+            /* margin-left: 3%; */
+            font-size: 15px;
+            font-weight: bold;
+        }
+        header ul li a {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 570px) {
+        header .logo {
+            width: 90px;
+            line-height: 43px;
+        }
+        header ul li {margin-left: 0;}
+         header ul {
+            width: 55%;
+        }
+    }
+    @media (max-width: 510px) {
+        .intro_inner {top: 20%;}
+    }
+    
+    
+</style>
+
+
+    <header>
+        <div class="header_inner">
+            <a href="" class="logo"><img src="./img/logo.svg" alt="이엔미디어"></a>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>        
+    </header>
+    <article class="intro">
+ 
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/main.jpg" /></div>
+                <div class="swiper-slide"><img src="./img/main.jpg" /></div>
+                <div class="swiper-slide"><img src="./img/main.jpg" /></div>
+            </div>
+        </div>
+
+        <div class="intro_inner">
+            <p>Lorem ipsum<br>dolor sit amet,</p>
+            <span>Lorem ipsum dolor sit amet, consectetur<br>sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</span>
+        </div>
+        
+    </article>
+    <div class="card">
+        <ul>
+            <li>
+                <img src="./img/img1.jpg" alt="새싹">
+                <div>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <span class="mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
+                    <span class="txt">Lorem ipsum dolor sit amet,</span>
+                </div>                
+            </li>
+            <li>
+                <img src="./img/img2.jpg" alt="꽃">
+                <div>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <span class="mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
+                    <span class="txt">Lorem ipsum dolor sit amet,</span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/img3.jpg" alt="길">
+                <div>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <span class="mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
+                    <span class="txt">Lorem ipsum dolor sit amet,</span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/img4.jpg" alt="바다">
+                <div>
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <span class="mid">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span>
+                    <span class="txt">Lorem ipsum dolor sit amet,</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <article class="custom"></article>
+    <footer>
+        <div class="footer_inner">
+            <a href="" class="logo"><img src="./img/logo.svg" alt="이엔미디어"></a>
+            <p>Copyrights 2024. 테스트 All Rights Reserved</p>
+        </div>        
+    </footer>
+
+<script>
+    const mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 1500,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        }
+    });
+</script>
+
+</body>
+</html>
